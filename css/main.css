@@ -1,0 +1,104 @@
+/* RESET, NORMALIZE STYLES: */
+@import url('./reset.css');
+@import url('./normalize.css');
+
+/* FONTS LOAD SECTION: */
+@import url('./fonts.css');
+
+/* LAYOUTS STYLES: */
+@import url('./layout/wrapper.css');
+@import url('./layout/header.css');
+@import url('./layout/main.css');
+@import url('./layout/footer.css');
+
+@import url('./layout/container.css');
+
+@import url('./layout/s-columns.css');
+
+/* UI STYLES: */
+@import url('./ui/cursor.css');
+@import url('./ui/visually-hidden.css');
+@import url('./ui/burger-menu.css');
+@import url('./ui/slide-main-button.css');
+@import url('./ui/slide-main-link.css');
+@import url('./ui/double-range.css');
+@import url('./ui/custom-inputs.css');
+@import url('./ui/custom-select.css');
+@import url('./ui/add-filters-button.css');
+@import url('./ui/sumbit-filter-button.css');
+@import url('./ui/contacts-link.css');
+
+/* BEM BLOCKS: */
+@import url('./bem-blocks/logo.css');
+@import url('./bem-blocks/contacts.css');
+@import url('./bem-blocks/menu.css');
+@import url('./bem-blocks/hero.css');
+@import url('./bem-blocks/link-gallery.css');
+@import url('./bem-blocks/socials.css');
+@import url('./bem-blocks/slider.css');
+@import url('./bem-blocks/slide.css');
+@import url('./bem-blocks/filter.css');
+@import url('./bem-blocks/sticky-link.css');
+@import url('./bem-blocks/modal-menu.css');
+@import url('./bem-blocks/modal-filter-bar.css');
+
+
+/* USER VARIABLES SECTION: */
+:root {
+	--accent: #D90002;
+	--background: #E5E5E5;;
+	--text: #FFFFFF;
+	--grey: rgba(255,255,255, .5);
+	--black: #171723;
+	--white: #FFFFFF;
+	--regular-text: 16px;
+	--lineheight: 1.18;
+	--userfont: Core Sans C, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+
+	position: relative;
+	overflow-x: hidden;
+
+	color: var(--text);
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+
+	text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+	cursor: none;
+}
+
+body button {
+	cursor: none;
+}
+
+a {
+	cursor: none;
+}
+
+button:disabled {
+	pointer-events: none;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.menu-opened .wrapper {
+
+}

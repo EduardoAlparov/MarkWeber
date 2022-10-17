@@ -1,0 +1,133 @@
+.link-gallery {
+    position: relative;
+    z-index: 136;
+}
+
+.link-gallery__list {
+    max-height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 11px;
+}
+
+.link-gallery__item {
+    width: calc(100% / 2 + 4px);
+}
+
+.link-gallery__link {
+    position: relative;
+
+    display: block;
+
+    line-height: 1.1875;
+    text-decoration-line: underline;
+    color: rgba(255,255,255, .6);
+    transition: 0.3s;
+}
+
+.link-gallery__link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    pointer-events: none;
+
+    width: 0;
+    height: 0;
+    display: block;
+
+    background-color: rgba(0,0,0, 0);
+    transition: background-color 0.3s;
+}
+
+.link-gallery__info {
+    position: absolute;
+    top: 163px;
+    left: 0;
+
+    width: calc(100% - 27px);
+
+    transform: translateY(30px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.link-gallery__image {
+    /* height: 231px; */
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.link-gallery__image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.link-gallery__desc {
+    max-width: 330px;
+}
+
+.link-gallery__title {
+    margin-bottom: 10px;
+}
+
+.link-gallery__text {
+    color: var(--grey);
+}
+
+@media (any-hover: hover) {
+    .link-gallery__link:hover {
+        color: rgba(255,255,255, 1);
+    }
+
+    .link-gallery__link:hover + .link-gallery__info {
+
+        transform: translateY(0px);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .link-gallery__link:hover::after {
+        width: 200vw;
+        height: 200vh;
+
+        background-color: rgba(0,0,0, .5);
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .link-gallery__list {
+        column-gap: 44px;
+    }
+
+    .link-gallery__item {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1680.98px),  screen and (max-height: 959px) {
+    .link-gallery__info {
+        position: absolute;
+        top: 163px;
+        left: 0;
+
+        width: calc(100% - 100px);
+    }
+
+    .link-gallery__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1680.98px) {
+
+}

@@ -1,0 +1,105 @@
+.double-range {display: flex;}
+
+/* range line ================== start */
+.double-range input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: none;
+}
+
+/* range line ================== end */
+
+.double-range__item {
+    width: 270px;
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 7px;
+
+}
+
+.double-range__half {
+    position: relative;
+    z-index: 35;
+}
+
+.double-range__half:first-child {
+    flex-basis: calc(50% + 3px);
+}
+
+.double-range__half:last-child {
+    flex-basis: calc(50% - 3px);
+}
+
+.double-range__half:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.double-range__input {
+    position: absolute;
+    bottom: -2px;
+    right: -1px;
+    z-index: 40;
+
+    width: 100%;
+}
+
+@-moz-document url-prefix() {
+    .double-range__input {
+        bottom: -10px;
+    }
+}
+
+.double-range__half_left .double-range__input {
+    left: 1px;
+}
+
+.double-range__half_right .double-range__input {
+    right: 1px;
+}
+
+.double-range__label {
+    display: block;
+    padding: 20px 15px;
+
+    line-height: 1;
+    cursor: none;
+}
+
+.double-range__label-static-text {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.double-range__half_left .double-range__input {
+    transform: rotateY(180deg);
+}
+
+.double-range__inner-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    padding-left: 38px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    cursor: none;
+}
+
+@media screen and (max-width: 1680.98px) {
+    .double-range__label {
+        display: block;
+        padding: 10px 15px;
+
+        line-height: 1;
+        cursor: none;
+    }
+
+    .double-range__item {
+        width: 210px;
+    }
+}

@@ -1,0 +1,24 @@
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1680px;
+    width: 100%;
+    padding: 0 46px 0 34px;
+}
+
+@media screen and (max-width: 1199.98px) {
+    [class*="__container"] {
+        margin: 0 auto;
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 26px 0 24px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        margin: 0 auto;
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 15px;
+    }
+}

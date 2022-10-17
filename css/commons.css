@@ -1,0 +1,39 @@
+._padding-top-section {
+    padding-top: 240px;
+}
+
+._margin-top-section {
+    margin-top: 115px;
+}
+
+._orange-color {
+    color: var(--accent-color);
+}
+
+._uppercase {
+    text-transform: uppercase;
+}
+
+._white-color {
+    color: var(--white-color);
+}
+
+._block-scrolling {
+    overflow: hidden;
+}
+
+
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+@media screen and (max-width: 1221px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}

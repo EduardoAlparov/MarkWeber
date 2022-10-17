@@ -1,0 +1,30 @@
+.sumbit-filter-button {
+    min-height: 56px;
+    padding: 21px 24px 19px;
+
+    background-color: #D90002;
+    border-radius: 7px;
+    border: none;
+
+    line-height: 1;
+    color: var(--white);
+    transition: .4s;
+}
+
+@media (any-hover: hover) {
+    .sumbit-filter-button:hover {
+        box-shadow: 0px 0px 0px 50px rgba(255,255,255,1) inset;
+        color: var(--black);
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+
+    .sumbit-filter-button {
+        min-height: unset;
+        padding: 10px 24px 10px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+    }
+}

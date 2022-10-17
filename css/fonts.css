@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Core Sans C;
+    src: url('../fonts/CoreSansC-45Regular.ttf') format('ttf');
+    src: url('../fonts/CoreSansC-45Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Core Sans C;
+    src: url('../fonts/CoreSansC-55Medium.ttf') format('ttf');
+    src: url('../fonts/CoreSansC-55Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Core Sans C;
+    src: url('../fonts/CoreSansC-65Bold.ttf') format('ttf');
+    src: url('../fonts//CoreSansC-65Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}

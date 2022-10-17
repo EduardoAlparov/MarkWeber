@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Mark-Weber-Test</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<!-- swiper start -->
+	<!-- <link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+	/> -->
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- swiper end -->
+
+	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body class="preload">
+
+	<div class="wrapper">
+
+		<!-- fixed hover -->
+        <header class="header">
+			<div class="header__container s-columns">
+				<div class="header__logo s-columns__col s-columns__col_quarter">
+					<a href="/" class="logo">
+						<img src="./images/logo.png" alt="логотип">
+					</a>
+
+					<div class="s-columns__socials">
+						<!-- socials -->
+						<div class=" socials">
+							<ul class="socials__list">
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<iconify-icon inline icon="fa-brands:facebook-f" style="color: white; transition: 0.3s;" width="12" height="25"></iconify-icon>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<iconify-icon inline icon="fa:instagram" style="color: white; transition: 0.3s;" width="20" height="25"></iconify-icon>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<iconify-icon inline icon="akar-icons:twitter-fill" style="color: white; transition: 0.3s;" width="20" height="20"></iconify-icon>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<iconify-icon inline icon="fa:vk" style="color: white; transition: 0.3s;" width="20" height="14"></iconify-icon>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /socials -->
+					</div>
+				</div>
+
+				<div class="header__contacts s-columns__col s-columns__col_quarter">
+					<div class="contacts">
+						<a href="tel:8 800 222-37-90" class="contacts__link">
+							8 800 222-37-90
+						</a>
+						<div class="contacts__text">
+							<span>Работаем ежедневно с 10:00 до 20:00</span>
+						</div>
+					</div>
+
+					<a href="href="tel:8 800 222-37-90"" class="contacts-link">
+						<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.6917 18C14.5068 17.9995 14.3225 17.9798 14.1418 17.9414C10.7031 17.2522 7.53517 15.6364 5.00256 13.2798C2.524 10.9181 0.804981 7.91106 0.0534965 4.62261C-0.035113 4.21277 -0.0133647 3.78773 0.116649 3.3884C0.246663 2.98906 0.480566 2.62885 0.795856 2.34244L2.99544 0.291352C3.10779 0.188418 3.24128 0.109594 3.3872 0.0600228C3.53311 0.0104518 3.68818 -0.0087511 3.84228 0.00366726C4.00206 0.0198165 4.15625 0.0696821 4.294 0.149757C4.43176 0.229832 4.54973 0.338173 4.63963 0.46716L7.38911 4.40418C7.49222 4.55694 7.54199 4.73774 7.5311 4.91995C7.52021 5.10217 7.44924 5.27619 7.32862 5.41641L5.94838 7.01466C6.49809 8.19334 7.27657 9.25864 8.24145 10.1526C9.20008 11.0789 10.3332 11.8186 11.5793 12.3315L13.2895 11.0156C13.4331 10.9056 13.6079 10.8406 13.7906 10.8292C13.9733 10.8178 14.1553 10.8605 14.3123 10.9517L18.464 13.5515C18.6065 13.6339 18.7279 13.7465 18.8191 13.8808C18.9102 14.0151 18.9689 14.1677 18.9906 14.3271C19.0123 14.4865 18.9964 14.6485 18.9443 14.8011C18.8921 14.9538 18.805 15.093 18.6895 15.2084L16.5449 17.2648C16.3013 17.4996 16.0121 17.6855 15.6941 17.8117C15.376 17.9378 15.0354 18.0018 14.6917 18ZM3.7543 1.05851L1.55471 3.1096C1.37734 3.26972 1.24605 3.47181 1.17374 3.69599C1.10142 3.92017 1.09059 4.15873 1.14229 4.3882C1.84106 7.47396 3.4473 10.2976 5.76692 12.518C8.15027 14.735 11.1315 16.2549 14.3673 16.9025C14.6122 16.9521 14.866 16.9421 15.106 16.8732C15.3459 16.8044 15.5644 16.679 15.742 16.5083L17.8866 14.4518L13.8779 11.9426L12.0412 13.3597C11.9709 13.4136 11.8881 13.4501 11.7999 13.4658C11.7117 13.4816 11.6209 13.4763 11.5353 13.4503C10.0103 12.9059 8.62828 12.0418 7.48809 10.9197C6.30876 9.85273 5.39333 8.54152 4.8101 7.08391C4.78542 6.99567 4.7846 6.90276 4.80772 6.81413C4.83083 6.72549 4.8771 6.6441 4.94207 6.5778L6.42679 4.85702L3.7543 1.05851Z" fill="white"/>
+						</svg>
+					</a>
+
+					<div class="s-columns__link-gallery">
+						<!-- links gallery -->
+						<div class="link-gallery">
+							<div class="link-gallery__body">
+								<ul class="link-gallery__list">
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Северный парк
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Северный парк
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Станция Столичная
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Станция Столичная
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Лето
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Лето
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Сказочный сад
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Сказочный сад
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Краски
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Краски
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Ренесанс
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Ренесанс
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Компасс сити
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Компасс сити
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Бруклин
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Бруклин
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="link-gallery__item">
+										<a href="#" target="_blank" class="link-gallery__link">
+											Монблан
+										</a>
+										<div class="link-gallery__info">
+
+											<div class="link-gallery__image">
+												<img src="./images//link-gallery/image-1.png" alt="фото жилого комплекса">
+											</div>
+
+											<div class="link-gallery__desc">
+
+												<h4 class="link-gallery__title">
+													Монблан
+												</h4>
+
+												<div class="link-gallery__text">
+													<p>
+														Жилой комплекс небывалого масштаба
+														с развитой инфраструктурой
+													</p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /links gallery -->
+					</div>
+				</div>
+
+				<div class="header__menus-wrapper s-columns__col s-columns__col_half">
+					<div class="header__nav-menu">
+
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" id="apartments" class="menu__link">
+										<span>
+											Квартиры
+										</span>
+										<span>
+											Квартиры
+										</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" id="mortgage" class="menu__link">
+										<span>
+											Ипотека
+										</span>
+										<span>
+											Ипотека
+										</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" id="commerce" class="menu__link">
+										<span>
+											Коммерция
+										</span>
+										<span>
+											Коммерция
+										</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" id="management" class="menu__link">
+										<span>
+											Управляющая компания
+										</span>
+										<span>
+											Управляющая компания
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+					<div class="header__burger-menu">
+
+						<div class="burger-menu">
+							<button class="burger-menu__button">
+
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /fixed hover -->
+
+		<main class="main">
+
+			<section class="slider swiper">
+				<!-- hidden section main title -->
+				<h1 class="section__title visually-hidden" >
+					Заголовок главной страницы
+				</h1>
+				<!-- /hidden section main title -->
+
+				<!-- sliders list -->
+				<div class="slider__wrapper">
+
+					<div class="slider__slide slider__slide_active slide">
+						<div class="slide__background-wrapper" data-swiper-parallax="0%">
+							<div class="slide__background" >
+								<video loop muted autoplay>
+									<source src="./images/video/video-1.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+								</video>
+							</div>
+						</div>
+
+						<div class="slide__container s-columns s-columns_end">
+							<div class="s-columns__col_half" >
+								<div class="slide__info-wrapper" data-swiper-parallax="0%">
+									<div class="slide__info">
+										<div class="slide__info-title">
+											Стильная архитектура и виды из окон будущей квартиры не оставят равнодушных
+										</div>
+
+										<div class="slide__buttons">
+											<a href="#" class="slide__button slide-main-button">
+
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.5 2.5V7.5H2.5V8.5H7.5V13.5H8.5V8.5H13.5V7.5H8.5V2.5H7.5Z" stroke-width="0.7"/>
+												</svg>
+
+												<span>
+													Выбрать квартиру
+												</span>
+											</a>
+											<a href="#" class="slide__link slide-main-link">
+												<span>
+													Купить квартиру онлайн
+												</span>
+
+												<svg width="8" height="11" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.823223 10.1982L0.646447 10.375L0.823223 10.5518L1.36229 11.0908L1.53906 11.2676L1.71584 11.0908L6.40334 6.40334L6.40338 6.40338L6.40722 6.39937L6.66504 6.12984L6.83033 5.95703L6.66504 5.78423L6.40722 5.51469L6.40727 5.51465L6.40334 5.51072L1.71584 0.823224L1.53906 0.646447L1.36229 0.823224L0.823223 1.36229L0.646446 1.53906L0.823223 1.71584L5.06442 5.95703L0.823223 10.1982Z" stroke-width="0.5"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__slide slide">
+						<div class="slide__background-wrapper" data-swiper-parallax="0%">
+							<div class="slide__background">
+								<video loop muted autoplay>
+									<source src="./images/video/video-2.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+								</video>
+							</div>
+						</div>
+
+						<div class="slide__container s-columns s-columns_end" >
+							<div class="s-columns__col_half">
+								<div class="slide__info-wrapper" data-swiper-parallax="0%">
+									<div class="slide__info">
+										<div class="slide__info-title" >
+											Большие парковые территории и безопасные дворы созданы для счастливой жизни
+										</div>
+
+										<div class="slide__buttons">
+											<a href="#" class="slide__button slide-main-button">
+
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.5 2.5V7.5H2.5V8.5H7.5V13.5H8.5V8.5H13.5V7.5H8.5V2.5H7.5Z" stroke-width="0.7"/>
+												</svg>
+
+												<span>
+													Выбрать квартиру
+												</span>
+											</a>
+											<a href="#" class="slide__link slide-main-link">
+												<span>
+													Купить квартиру онлайн
+												</span>
+
+												<svg width="10" height="10" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.823223 10.1982L0.646447 10.375L0.823223 10.5518L1.36229 11.0908L1.53906 11.2676L1.71584 11.0908L6.40334 6.40334L6.40338 6.40338L6.40722 6.39937L6.66504 6.12984L6.83033 5.95703L6.66504 5.78423L6.40722 5.51469L6.40727 5.51465L6.40334 5.51072L1.71584 0.823224L1.53906 0.646447L1.36229 0.823224L0.823223 1.36229L0.646446 1.53906L0.823223 1.71584L5.06442 5.95703L0.823223 10.1982Z" stroke-width="0.5"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__slide slide">
+						<div class="slide__background-wrapper" data-swiper-parallax="0%">
+							<div class="slide__background" >
+								<video loop muted autoplay>
+									<source src="./images/video/video-3.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+								</video>
+							</div>
+						</div>
+
+						<div class="slide__container s-columns s-columns_end">
+							<div class="s-columns__col_half" >
+								<div class="slide__info-wrapper" data-swiper-parallax="0%">
+									<div class="slide__info">
+										<div class="slide__info-title" >
+											Стильная архитектура и виды из окон будущей квартиры не оставят равнодушных
+										</div>
+
+										<div class="slide__buttons">
+											<a href="#" class="slide__button slide-main-button">
+
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.5 2.5V7.5H2.5V8.5H7.5V13.5H8.5V8.5H13.5V7.5H8.5V2.5H7.5Z" stroke-width="0.7"/>
+												</svg>
+
+												<span>
+													Выбрать квартиру
+												</span>
+											</a>
+											<a href="#" class="slide__link slide-main-link">
+												<span>
+													Купить квартиру онлайн
+												</span>
+
+												<svg width="10" height="10" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.823223 10.1982L0.646447 10.375L0.823223 10.5518L1.36229 11.0908L1.53906 11.2676L1.71584 11.0908L6.40334 6.40334L6.40338 6.40338L6.40722 6.39937L6.66504 6.12984L6.83033 5.95703L6.66504 5.78423L6.40722 5.51469L6.40727 5.51465L6.40334 5.51072L1.71584 0.823224L1.53906 0.646447L1.36229 0.823224L0.823223 1.36229L0.646446 1.53906L0.823223 1.71584L5.06442 5.95703L0.823223 10.1982Z" stroke-width="0.5"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /sliders list -->
+
+				<!-- sliders controls -->
+				<div class="slider__controls">
+					<div class="slider__container s-columns s-columns_end">
+						<div class="s-columns__col_half">
+							<div class="slider__buttons-wrapper">
+								<div class="slider__buttons">
+
+									<button type="button" disabled class="slider__button slider__button_prev">
+
+										<svg class="slider__arrow-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.580002 10.59L5.17 6L0.580001 1.41L2 -6.20702e-08L8 6L2 12L0.580002 10.59Z"/>
+										</svg>
+
+										<span class="slider__button-border">
+											<svg class="slider__border-svg">
+												<circle cx="20" cy="20" r="19" fill="none" />
+												<circle class="slider__svg-circle" cx="20" cy="20" r="19" fill="none" stroke-mitterlimit="0" stroke-dasharray="360" stroke-linecap="round">
+													<animate attributeName="stroke-dashoffset" values="360;0" by="10" dur="1.8s" restart="always" repeatCount="indefinite" ></animate>
+												</circle>
+											</svg>
+										</span>
+
+									</button>
+
+									<button type="button" class="slider__button slider__button_next">
+
+										<svg class="slider__arrow-svg" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.580002 10.59L5.17 6L0.580001 1.41L2 -6.20702e-08L8 6L2 12L0.580002 10.59Z"/>
+										</svg>
+
+										<span class="slider__button-border">
+											<svg class="slider__border-svg" xml:space="preserve">
+												<circle cx="20" cy="20" r="19" fill="none" />
+												<circle class="slider__svg-circle" cx="20" cy="20" r="19" fill="none" stroke-mitterlimit="0" stroke-dasharray="360" stroke-linecap="round">
+													<animate attributeName="stroke-dashoffset" values="360;0" by="10" dur="1.8s" restart="always" repeatCount="indefinite" ></animate>
+												</circle>
+											</svg>
+										</span>
+
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /sliders controls -->
+			</section>
+
+		</main>
+
+		<!-- fixed footer -->
+		<footer class="footer">
+			<div class="footer__container">
+				<form class="footer__filter filter">
+					<div class="filter__col">
+						<div class="filter__property">
+							<div class="filter__property-title">
+								Количество комнат
+							</div>
+
+							<div class="filter__property-control">
+								<div class="filter__checkboxes">
+									<div class="filter__checkbox-wrapper filter__checkbox-wrapper_big">
+										<input id="studio" type="checkbox" checked class="visually-hidden filter__checkbox-input" value="studio">
+										<label for="studio" class="filter__checkbox-view filter__checkbox-view_number">
+											cтудия
+										</label>
+									</div>
+
+									<div class="filter__checkbox-wrapper">
+										<input id="one-room" type="checkbox" class="visually-hidden filter__checkbox-input" value="1">
+										<label for="one-room" class="filter__checkbox-view filter__checkbox-view_number">
+											1
+										</label>
+									</div>
+
+									<div class="filter__checkbox-wrapper">
+										<input id="two-room" type="checkbox" class="visually-hidden filter__checkbox-input" value="2">
+										<label for="two-room" class="filter__checkbox-view filter__checkbox-view_number">
+											2
+										</label>
+									</div>
+
+									<div class="filter__checkbox-wrapper">
+										<input id="three-room" type="checkbox" class="visually-hidden filter__checkbox-input" value="3">
+										<label for="three-room" class="filter__checkbox-view filter__checkbox-view_number">
+											3
+										</label>
+									</div>
+
+									<div class="filter__checkbox-wrapper">
+										<input id="four-room" type="checkbox" class="visually-hidden filter__checkbox-input" value="4">
+										<label for="four-room" class="filter__checkbox-view filter__checkbox-view_number">
+											4
+										</label>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter__col">
+
+						<div class="filter__property">
+
+							<div class="filter__property-title">
+								Площадь, м&sup2;
+							</div>
+
+							<div class="filter__property-control">
+								<div class="filter__range double-range">
+									<div class="double-range__item">
+										<div class="double-range__half double-range__half_left">
+											<input data-value="55" class="double-range__input double-range__input_left styled-slider slider-progress" type="range" id="min-area" name="min-area" min="-77" max="-32">
+											<label  for="min-area" class="double-range__label double-range__label_left">
+												<span class="double-range__label-static-text">от</span>
+												<input type="number" class="double-range__inner-input double-range__min-area-value" value="32">
+											</label>
+										</div>
+
+										<div class="double-range__half double-range__half_right">
+											<input data-value="132" class="double-range__input double-range__input_right styled-slider slider-progress" type="range" id="max-area" name="max-area" min="78" max="186">
+											<label  for="max-area" class="double-range__label double-range__label_right">
+												<span class="double-range__label-static-text">до</span>
+												<input type="number" class="double-range__inner-input double-range__max-area-value" value="186">
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="filter__col">
+
+						<div class="filter__property">
+
+							<div class="filter__property-title">
+								Стоимость, млн ₽
+							</div>
+
+							<div class="filter__property-control">
+								<div class="filter__range double-range">
+									<div class="double-range__item">
+										<div class="double-range__half double-range__half_left">
+											<input data-value="3.5" step=".1" class="double-range__input double-range__input_left styled-slider slider-progress" type="range" id="min-price" name="min-area" min="-8" max="-1.5">
+											<label  for="min-price" class="double-range__label double-range__label_left">
+												<span class="double-range__label-static-text">от</span>
+												<input type="number" class="double-range__inner-input double-range__min-area-value" value="1.5">
+											</label>
+										</div>
+
+										<div class="double-range__half double-range__half_right">
+											<input data-value="132" step=".1" class="double-range__input double-range__input_right styled-slider slider-progress" type="range" id="max-area" name="max-price" min="8.5" max="17.5">
+											<label  for="max-price" class="double-range__label double-range__label_right">
+												<span class="double-range__label-static-text">до</span>
+												<input type="number" class="double-range__inner-input double-range__max-area-value" value="17.5">
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="filter__col filter__col_select ">
+
+						<div class="filter__property">
+
+							<div class="filter__property-title">
+								Жилой комплекс
+							</div>
+
+							<div class="filter__property-control">
+								<div class="filter__select">
+									<div class="select">
+										<select id="select">
+											<option>Северный парк</option>
+											<option>Станция Столичная</option>
+											<option>Лето</option>
+											<option>Сказочный сад</option>
+											<option>Краски</option>
+											<option>Ренесанс</option>
+											<option>Компасс сити</option>
+											<option>Бруклин</option>
+											<option>Монблан</option>
+										</select>
+										<div class="select_arrow">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="filter__col filter__col-buttons">
+						<div class="filter__property filter__property_end">
+							<button type="button" class="filter__add-filters-button slide-main-button add-filters-button">
+								<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.24618 0C7.2769 0 6.45111 0.613636 6.13778 1.45455H0V2.90909H6.13778C6.45111 3.75 7.2769 4.36364 8.24618 4.36364C9.21546 4.36364 10.0412 3.75 10.3546 2.90909H17.9917V1.45455H10.3546C10.0412 0.613636 9.21546 0 8.24618 0ZM8.24618 1.45455C8.66786 1.45455 8.99583 1.77273 8.99583 2.18182C8.99583 2.59091 8.66786 2.90909 8.24618 2.90909C7.8245 2.90909 7.49653 2.59091 7.49653 2.18182C7.49653 1.77273 7.8245 1.45455 8.24618 1.45455ZM13.4938 5.81818C12.5245 5.81818 11.6987 6.43182 11.3854 7.27273H0V8.72727H11.3854C11.6987 9.56818 12.5245 10.1818 13.4938 10.1818C14.463 10.1818 15.2888 9.56818 15.6021 8.72727H17.9917V7.27273H15.6021C15.2888 6.43182 14.463 5.81818 13.4938 5.81818ZM13.4938 7.27273C13.9154 7.27273 14.2434 7.59091 14.2434 8C14.2434 8.40909 13.9154 8.72727 13.4938 8.72727C13.0721 8.72727 12.7441 8.40909 12.7441 8C12.7441 7.59091 13.0721 7.27273 13.4938 7.27273ZM5.24757 11.6364C4.27829 11.6364 3.4525 12.25 3.13917 13.0909H0V14.5455H3.13917C3.4525 15.3864 4.27829 16 5.24757 16C6.21685 16 7.04264 15.3864 7.35597 14.5455H17.9917V13.0909H7.35597C7.04264 12.25 6.21685 11.6364 5.24757 11.6364ZM5.24757 13.0909C5.66925 13.0909 5.99722 13.4091 5.99722 13.8182C5.99722 14.2273 5.66925 14.5455 5.24757 14.5455C4.82589 14.5455 4.49792 14.2273 4.49792 13.8182C4.49792 13.4091 4.82589 13.0909 5.24757 13.0909Z"/>
+								</svg>
+
+								<span class="filter__add-filters-button_f-span">
+									Еще<br> фильтры
+								</span>
+								<span class="filter__add-filters-button_s-span">
+									Скрыть<br> фильтры
+								</span>
+							</button>
+						</div>
+
+						<div class="filter__property filter__property_end">
+							<button class="filter__submit-button sumbit-filter-button">
+								Показать 120 квартир
+							</button>
+						</div>
+					</div>
+				</form>
+
+				<div class="footer__mobile-button-wrapper">
+					<button class="filter__mobile-button">
+						подобрать квартиру
+
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M18 16.9285L16.9285 18L12.5293 13.6008C11.4217 14.4769 10.0219 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5C15 10.0219 14.4769 11.4217 13.6008 12.5293L18 16.9285ZM8.51526 13.5153C11.2767 13.5153 13.5153 11.2767 13.5153 8.51526C13.5153 5.75384 11.2767 3.51526 8.51526 3.51526C5.75384 3.51526 3.51526 5.75384 3.51526 8.51526C3.51526 11.2767 5.75384 13.5153 8.51526 13.5153Z" fill="white"/>
+						</svg>
+
+					</button>
+				</div>
+			</div>
+		</footer>
+		<!-- /fixed footer -->
+
+		<!-- stciky link about finance -->
+		<a href="#" class="sticky-link">
+			<picture>
+				<source
+					srcset="./images/stilcky-link-cover-small.png"
+					media="(max-width: 1199.98px)"
+				>
+				<img
+         			srcset="./images/stilcky-link-cover.png" alt="">
+			</picture>
+
+			<span class="sticky-link__pseudo"></span>
+		</a>
+		<!-- /stciky link about finance -->
+
+	</div>
+
+	<!-- modal menu  -->
+	<div class="modal-menu">
+		<div class="modal-menu__body">
+			<div class="modal-menu__menu">
+				<nav class="menu">
+					<ul class="menu__list menu__list_vertical">
+						<li class="menu__item">
+							<a href="#" id="apartments" class="menu__link">
+								<span>
+									Квартиры
+								</span>
+								<span>
+									Квартиры
+								</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" id="mortgage" class="menu__link">
+								<span>
+									Ипотека
+								</span>
+								<span>
+									Ипотека
+								</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" id="commerce" class="menu__link">
+								<span>
+									Коммерция
+								</span>
+								<span>
+									Коммерция
+								</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" id="management" class="menu__link">
+								<span>
+									Управляющая компания
+								</span>
+								<span>
+									Управляющая компания
+								</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="modal-menu__socails">
+				<div class="socials">
+					<ul class="socials__list socials__list_vertical">
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<iconify-icon inline icon="fa-brands:facebook-f" style="color: white; transition: 0.3s;" width="12" height="25"></iconify-icon>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<iconify-icon inline icon="fa:instagram" style="color: white; transition: 0.3s;" width="20" height="25"></iconify-icon>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<iconify-icon inline icon="akar-icons:twitter-fill" style="color: white; transition: 0.3s;" width="20" height="20"></iconify-icon>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link">
+								<iconify-icon inline icon="fa:vk" style="color: white; transition: 0.3s;" width="20" height="14"></iconify-icon>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<button class="modal-menu__close-button">
+				<iconify-icon inline icon="ei:close-o" style="color: white;" width="50" height="50"></iconify-icon>
+			</button>
+		</div>
+	</div>
+	<!-- modal menu  -->
+
+	<!-- modal-filter-bar -->
+	<div class="modal-filter-bar">
+		<div class="modal-filter-bar__body">
+
+			<button class="modal-filter-bar__close-button">
+				<iconify-icon inline icon="ei:close-o" style="color: white;" width="50" height="50"></iconify-icon>
+			</button>
+		</div>
+	</div>
+	<!-- /modal-filter-bar -->
+
+	<div class="cursor"></div>
+</body>
+
+</html>

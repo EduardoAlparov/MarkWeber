@@ -1,0 +1,20 @@
+.contacts__link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    transition: 0.3s;
+}
+
+.contacts__text {
+    margin-top: 10px;
+
+    color: var(--grey);
+}
+
+@media (any-hover: hover) {
+    .contacts__link:hover {
+        color: var(--grey);
+    }
+}

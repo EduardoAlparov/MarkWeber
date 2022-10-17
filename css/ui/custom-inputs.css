@@ -1,0 +1,97 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  cursor: none;
+}
+
+
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+    height: auto;
+    -webkit-appearance: none;
+}
+
+  /*progress support*/
+input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+}
+
+input[type=range].styled-slider:focus {
+    outline: none;
+}
+
+  /*webkit*/
+
+input[type=range].styled-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    width: 21px;
+    height: 21px;
+
+    border-radius: 100%;
+    background: #D90002;
+    border: none;
+    box-shadow: 0px 0px 8px #ED2426;
+    margin-top: calc(max((1em - 1px - 1px) * 0.5,0px) - 2em * 0.5);
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 3px;
+    border: none;
+    border-radius: 0.5em;
+    background: transparent;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#D90002,#D90002) 0/var(--sx) 100% no-repeat, transparent;
+}
+
+/*mozilla*/
+
+input[type=range].styled-slider::-moz-range-thumb {
+    -webkit-appearance: none;
+
+    width: 21px;
+    height: 21px;
+
+    border-radius: 100%;
+    background: #D90002;
+    border: none;
+    box-shadow: 0px 0px 8px #ED2426;
+    margin-top: calc(max((1em - 1px - 1px) * 0.5,0px) - 2em * 0.5);
+}
+
+input[type=range].styled-slider::-moz-range-track {
+    height: 3px;
+    border: none;
+    border-radius: 0.5em;
+    background: transparent;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(#D90002,#D90002) 0/var(--sx) 100% no-repeat, transparent;
+}
+
+@media screen and (max-width: 1680.98px) {
+    input[type=range].styled-slider::-webkit-slider-thumb {
+        width: 16px;
+        height: 16px;
+    }
+
+    input[type=range].styled-slider::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+    }
+}

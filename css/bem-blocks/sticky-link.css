@@ -1,0 +1,125 @@
+.sticky-link {
+    position: fixed;
+    top: 203px;
+    left: 0;
+    z-index: 150;
+
+    width: 192px;
+    height: 55px;
+    display: block;
+
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.sticky-link__pseudo {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+
+    display: block;
+    height: 55px;
+    width: 60px;
+
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.sticky-link::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0;
+
+    width: 0;
+	height: 0;
+	border-top: 27.5px solid #fff;
+	border-right: 6px solid transparent;
+}
+
+.sticky-link::before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+
+    width: 0;
+	height: 0;
+	border-bottom: 27.5px solid #fff;
+	border-right: 6px solid transparent;
+}
+
+@media (any-hover: hover) {
+    .sticky-link:hover {
+        transform: translateX(50px);
+    }
+}
+
+.menu-opened .sticky-link {
+    z-index: 146;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 1680.98px),  screen and (max-height: 959px) {
+    .sticky-link {
+        top: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 1199.98px) {
+    .sticky-link {
+        top: unset;
+        right: 0;
+        left: unset;
+        bottom: 38%;
+
+        width: 56px;
+    }
+
+    .sticky-link__pseudo {
+        display: none;
+    }
+
+    .sticky-link::after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 0;
+
+        width: 0;
+        height: 0;
+        border-top: 27.5px solid #fff;
+        border-right: 2px solid transparent;
+    }
+
+    .sticky-link::before {
+        content: '';
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+
+        width: 0;
+        height: 0;
+        border-bottom: 27.5px solid #fff;
+        border-right: 2px solid transparent;
+    }
+
+    .sticky-link::before,
+    .sticky-link::after {
+        left: unset;
+        right: 100%;
+
+        transform: rotateY(180deg);
+    }
+}
+
+@media (any-hover: hover) and (max-width: 1199.98px) {
+    .sticky-link:hover {
+        transform: translateX(0px);
+    }
+}

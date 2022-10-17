@@ -1,0 +1,24 @@
+.add-filters-button {
+    min-height: 56px;
+    gap: 16px;
+    padding: 10px 14px 10px 17px;
+    background-color: transparent;
+    border-color: rgba(255,255,255, .3);
+}
+
+.add-filters-button span {
+    text-align: left;
+    font-size: 13px;
+    line-height: 130.3%;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .add-filters-button {
+        min-height: unset;
+        padding: 10px 14px 10px 17px;
+    }
+
+    .add-filters-button span {
+        display: none;
+    }
+}

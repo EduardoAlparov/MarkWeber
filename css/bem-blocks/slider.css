@@ -1,0 +1,129 @@
+.slider {
+    height: 100%;
+   width: 100%;
+
+    background-color: #333333;
+}
+
+.slider__wrapper {
+    position: relative;
+    z-index: 115;
+
+    height: 100%;
+    display: flex;
+
+}
+
+.slider__slide {
+    min-width: 100%;
+    flex-basis: 100%;
+}
+
+.slider__controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 15vh 0 15vh 0;
+}
+
+.slider__buttons-wrapper {
+    position: relative;
+    z-index: 135;
+
+    padding-left: 106px;
+    padding-top: 55px;
+}
+
+.slider__buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.slider__button {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    border-radius: 100%;
+    border: 0;
+    background: none;
+    box-sizing: border-box;
+    cursor: none;
+    box-shadow: none;
+}
+
+.slider__button_prev {
+    transform: rotateY(180deg);
+}
+
+.slider__button svg {
+    pointer-events: none;
+}
+
+.slider__button .slider__arrow-svg {
+    fill: var(--white);
+}
+
+.slider__button span {
+    pointer-events: none;
+}
+
+.slider__button-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+}
+
+.slider__border-svg {
+    width: 100%;
+    height: 100%;
+
+    stroke: rgba(255, 255, 255, .3);
+    stroke-width: 1px;
+}
+
+.slider__svg-circle {
+    stroke: rgba(255, 255, 255, 1);
+    transform: rotate(-90deg) translate(-100%, 0);
+}
+
+.slider__button:disabled .slider__button-border {
+    display: none;
+}
+
+.swiper {
+    z-index: unset !important;
+}
+
+@media (any-hover: hover) {
+    .slider__button:hover .slider__arrow-svg {
+        fill: var(--grey)
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .slider__buttons-wrapper {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider__controls {
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

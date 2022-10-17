@@ -1,0 +1,24 @@
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+
+    width: 100%;
+    height: 100%;
+    padding: 15vh 0 15vh 0;
+
+    display: none;
+}
+
+
+.hero__socials {
+    /* margin-left: -11px;
+    margin-right: 14px; */
+}
+
+.hero__link-gallery {
+    padding-top: 60px;
+}

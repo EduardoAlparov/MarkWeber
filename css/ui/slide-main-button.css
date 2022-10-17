@@ -1,0 +1,60 @@
+.slide-main-button {
+    position: relative;
+    z-index: 145;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 23px 17px 14px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+
+    text-decoration: none;
+    color: inherit;
+    cursor: none;
+    transition: .4s ease-in-out;
+}
+
+.slide-main-button svg {
+    height: 16px;
+    width: 16px;
+    stroke: var(--white);
+    fill: var(--white);
+
+    transition: .4s;
+}
+
+.filter__add-filters-button  svg {
+    stroke: none;
+}
+
+@media (any-hover: hover) {
+    .slide-main-button:hover {
+        box-shadow: 0px 0px 0px 50px rgba(255,255,255,1) inset;
+        color: var(--black);
+    }
+
+    .slide-main-button:hover svg {
+        stroke: var(--black);
+        fill: var(--black);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .slide-main-button {
+        gap: 7px;
+        padding: 8px 15px 10px 10px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .slide-main-button svg {
+        height: 12px;
+        width: 12px;
+    }
+}
